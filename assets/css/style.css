@@ -1,0 +1,151 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto:300,400,500,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+input:focus, textarea:focus, button:focus {outline: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+font-family: 'Roboto Condensed', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.section-padding{
+    padding: 100px 0;
+}
+.section-padding.dark-bg{
+    background: #343434;
+    color: #a5a5a5;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+}
+.section-padding.dark-bg:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #2C2C2C;
+    opacity: .9;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.trailer-text{
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 50px;
+}
+.trailer-text h2{
+    font-size: 32px;
+    color: #fff;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.bordered-btn{
+    display: inline-block;
+    border: 2px solid #FF4F4B;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    padding: 8px 15px;
+    width:150px;
+    margin-top: 30px;
+}
+.bordered-btn i.fa{
+    float: right;
+    padding-top: 2px;
+}
+.trailor-info{
+    position: relative;
+    text-align: right;
+}
+.color-pricing-box{
+    position: absolute;
+    right: 140px;
+    background: #FF4F4B;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width:200px;
+    padding-top: 50px;
+    height: 300px;
+}
+.color-pricing-box p{
+    opacity: .5;
+}
+.color-pricing-box p.price-text{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    opacity: 1;
+    font-size: 30px;
+}
+.absolute-shopping-cart{
+    position: absolute;
+    left: -25px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    line-height: 50px;
+    color: #333;
+    box-shadow: 0 0 10px #666;
+    
+}
+.trailor-info img{
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+div.owl-carousel .owl-item .trailor-info img{
+    width: auto;
+    display: inline-block;
+}
+.featured-trailers-carousel .owl-dots div:nth-child(1) span::before{content: "01"}
+.featured-trailers-carousel .owl-dots div:nth-child(2) span::before{content: "02"}
+.featured-trailers-carousel .owl-dots div:nth-child(3) span::before{content: "03"}
+.featured-trailers-carousel .owl-dots div{
+    border-left: 2px solid #444;
+    padding: 30px 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.featured-trailers-carousel .owl-dots div.active{
+    border-color: #ff5151;
+}
+.featured-trailers-carousel .owl-dots div.active span::before{
+    color: #fff;
+}
+.featured-trailers-carousel .owl-dots {
+    position: absolute;
+    right: -8%;
+    top: 20%;
+}
